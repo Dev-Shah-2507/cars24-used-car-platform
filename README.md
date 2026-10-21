@@ -3,6 +3,49 @@
 Role-based MERN prototype inspired by Cars24. One web app, one shared MongoDB database, four roles:
 **Seller -> Evaluator -> Final offer -> Admin inventory -> Buyer marketplace.**
 
+## Features
+
+### Seller Module
+- Register and log in using role-based authentication.
+- Submit vehicle details and receive an inspection-based final offer.
+- Book an inspection and track the vehicle status.
+- View inspection reports and accept or reject the final offer.
+
+### Evaluator Module
+- View pending inspection requests.
+- Record vehicle condition ratings and inspection notes.
+- Submit an inspection report and set the final offer price.
+
+### Admin Module
+- Monitor vehicle submissions and dashboard statistics.
+- Manage purchase and refurbishment status.
+- Approve eligible vehicles for the buyer marketplace.
+
+### Buyer Module
+- Browse available used cars.
+- Search and filter vehicles by relevant criteria, including price.
+- View vehicle details and inspection summaries.
+
+### Shared Backend
+- Centralized MongoDB database.
+- JWT-based authentication and backend role authorization.
+- Centralized vehicle status management.
+- REST API endpoints for communication between the frontend and backend.
+
+## Technology Stack
+
+| Component | Technology | Purpose |
+|---|---|---|
+| Frontend | React + Vite | User interface and role-based dashboards |
+| Styling | CSS / Tailwind CSS | Responsive user interface |
+| Backend | Node.js + Express.js | REST APIs and business logic |
+| Database | MongoDB | Persistent storage of users, vehicles and inspections |
+| ODM | Mongoose | MongoDB schemas and database operations |
+| Authentication | JSON Web Tokens (JWT) | Authentication and role-based access |
+| Password Security | bcrypt or bcryptjs, if implemented | Password hashing |
+| Testing | Node.js test framework used by the project | Backend functionality and validation tests |
+| Version Control | Git and GitHub | Source code management and collaboration |
+
 ## Prerequisites
 - Node.js 18+ and npm
 - MongoDB running locally (`mongodb://127.0.0.1:27017`) **or** a free MongoDB Atlas connection string
